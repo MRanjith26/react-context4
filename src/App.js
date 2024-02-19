@@ -59,7 +59,7 @@ class App extends Component {
   }
 
   increaseCartItem = (id, quantity) => {
-    if (quantity > 1) {
+    if (quantity > 0) {
       this.setState(prevState => ({
         cartList: prevState.cartList.map(item => {
           if (item.id === id) {
